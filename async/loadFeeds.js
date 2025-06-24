@@ -9,7 +9,7 @@ module.exports = (feeds) => {
   )
   .then(feeds => {
     const app = document.getElementById('app');
-
+    app.innerHTML = '';
     feeds.forEach((feed, index) => {
       app.appendChild(FeedDigest(feed, index));
     });

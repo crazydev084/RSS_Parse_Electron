@@ -4,15 +4,18 @@
   "main": "main.js",
   "scripts": {
     "start": "electron .",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:win": "vue-cli-service electron:build --windows"
   },
   "author": "satellite",
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "electron": "^36.5.0"
+    "electron": "^36.5.0",
+    "vue-cli-plugin-electron-builder": "^2.1.1"
   },
   "dependencies": {
+    "electron-builder": "^26.0.12",
     "rss-parser": "^3.13.0",
     "rss-to-json": "^2.1.1"
   }
