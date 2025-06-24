@@ -12,6 +12,7 @@
   "description": "",
   "devDependencies": {
     "electron": "^36.5.0",
+    "electron-packager": "^17.1.2",
     "vue-cli-plugin-electron-builder": "^2.1.1"
   },
   "dependencies": {
