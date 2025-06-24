@@ -1,0 +1,19 @@
+{
+  "name": "hello_world",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "satellite",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "electron": "^36.5.0"
+  },
+  "dependencies": {
+    "rss-parser": "^3.13.0",
+    "rss-to-json": "^2.1.1"
+  }
+}
