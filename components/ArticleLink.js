@@ -1,3 +1,5 @@
+const shell = require('electron').shell
+
 const ParseDescription = (description) => {
   const parsedDescription = (description.split("</p><p>")[1]).split("</p>")[0];
   return parsedDescription
@@ -57,6 +59,10 @@ const ArticleLink = (item) => {
   articleLink.href = item.link;
   articleLink.target = "_blank";
   articleLink.innerHTML = `${item.title}`;
+  articleLink.onclick = (e) => {
+    e.preventDefault()
+    shell.openExternal(item.link);
+  }
 
 
   article.appendChild(div_up);

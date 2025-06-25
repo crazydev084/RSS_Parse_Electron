@@ -7,6 +7,6 @@ const loadFeeds = require('./async/loadFeeds');
 
 loadFeeds(masterFeedList);
 
-setInterval(() => { 
+setInterval(() => {
     loadFeeds(masterFeedList);
 }, 1000 * 600); // Every 10 minutes
