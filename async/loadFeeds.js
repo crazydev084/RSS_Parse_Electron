@@ -1,5 +1,5 @@
 const convertRssToJson = require('./convertRssToJson');
-const FeedDigest = require('../components/FeedDigest');
+const articleList = require('../components/ArticleList'); 
 
 module.exports = (feeds) => {
   return Promise
@@ -10,8 +10,8 @@ module.exports = (feeds) => {
   .then(feeds => {
     const app = document.getElementById('app');
     app.innerHTML = '';
-    feeds.forEach((feed, index) => {
-      app.appendChild(FeedDigest(feed, index));
+    feeds.forEach((feed) => {
+      app.appendChild(articleList(feed));
     });
   })
   .catch(e => console.error(e));

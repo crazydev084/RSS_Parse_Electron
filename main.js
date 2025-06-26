@@ -15,9 +15,9 @@ function createWindow() {
   // Create the browser window.
   mainWindow = new BrowserWindow(
     {
-      minWidth: 1200,
-      minHeight: 700,
-      autoHideMenuBar: true,
+      minWidth: 1024,
+      minHeight: 768,
+      // autoHideMenuBar: true,
       icon: path.join(__dirname, 'assets', 'icon.ico'),
       webPreferences: {
         nodeIntegration: true,
