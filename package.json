@@ -8,7 +8,6 @@
   },
   "author": "satellite",
   "license": "ISC",
-  "description": "",
   "devDependencies": {
     "electron": "^36.5.0",
     "electron-builder": "^26.0.12"
@@ -21,15 +20,17 @@
     "productName": "Tralert",
     "copyright": "Copyright © 2025 Tralert",
     "win": {
-      "target": [
-        "nsis",
-        "portable"
-      ],
+      "target": "msi",
       "icon": "assets/icon.ico"
     },
-    "nsis": {
+    "msi": {
+      "warningsAsErrors": false,
       "oneClick": false,
-      "allowToChangeInstallationDirectory": true
+      "perMachine": false,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "Tralert",
+      "menuCategory": "Tralert"
     }
   }
 }

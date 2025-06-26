@@ -17,7 +17,7 @@ function createWindow() {
     {
       minWidth: 1024,
       minHeight: 768,
-      // autoHideMenuBar: true,
+      autoHideMenuBar: true,
       icon: path.join(__dirname, 'assets', 'icon.ico'),
       webPreferences: {
         nodeIntegration: true,
