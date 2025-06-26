@@ -15,9 +15,8 @@ function createWindow() {
   // Create the browser window.
   mainWindow = new BrowserWindow(
     {
-      width: 850,
-      height: 700,
-      resizable: false,
+      minWidth: 1200,
+      minHeight: 700,
       autoHideMenuBar: true,
       icon: path.join(__dirname, 'assets', 'icon.ico'),
       webPreferences: {

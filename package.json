@@ -12,12 +12,9 @@
   "description": "",
   "devDependencies": {
     "electron": "^36.5.0",
-    "electron-packager": "^17.1.2",
-    "vue-cli-plugin-electron-builder": "^2.1.1"
+    "electron-packager": "^17.1.2"
   },
   "dependencies": {
-    "electron-builder": "^26.0.12",
-    "rss-parser": "^3.13.0",
     "rss-to-json": "^2.1.1"
   }
 }
