@@ -4,17 +4,32 @@
   "main": "main.js",
   "scripts": {
     "start": "electron .",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build:win": "vue-cli-service electron:build --windows"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "satellite",
   "license": "ISC",
   "description": "",
   "devDependencies": {
     "electron": "^36.5.0",
-    "electron-packager": "^17.1.2"
+    "electron-builder": "^26.0.12"
   },
   "dependencies": {
     "rss-to-json": "^2.1.1"
+  },
+  "build": {
+    "appId": "com.tralert.app",
+    "productName": "Tralert",
+    "copyright": "Copyright © 2025 Tralert",
+    "win": {
+      "target": [
+        "nsis",
+        "portable"
+      ],
+      "icon": "assets/icon.ico"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    }
   }
 }
